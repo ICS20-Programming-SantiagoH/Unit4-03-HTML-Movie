@@ -21,19 +21,24 @@ function enterClicked() {
     ageToGoSeeMovie = "You can go see any movie you want by yourself."
   }
 
-    // Diplay if user can watch PG or PG-13 movies
+    // Display if user can watch PG or PG-13 movies
   else if (age >= 13) { 
     ageToGoSeeMovie = "You can't watch R rated movies by yourself, but you can watch anything else (PG, PG-13 or G)." 
   }
 
-    // Diplay if user can watch G ated movies
+    // Display if user can watch G rated movies
   else if (age >= 5) { 
     ageToGoSeeMovie = "You can't watch R, PG-13 or PG rated movies by yourself, but you can watch G rated movies." 
   }
 
     // Display is user can't watch any movie by themselves
   else if (age >= 0) { 
-    ageToGoSeeMovie = "You can't watch any movie by yourself, please enter valid age." 
+    ageToGoSeeMovie = "You can't watch any movie by yourself, please enter a valid age." 
+  }
+
+    // Display if user entered a non valid age
+  else {
+    ageToGoSeeMovie = "Please enter a valid age."
   }
   
   // Display results back to user
